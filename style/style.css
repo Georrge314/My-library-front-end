@@ -1,0 +1,13 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+
+body {
+    margin: 0 auto;
+    background: rgb(118,221,117);
+    background: linear-gradient(174deg, rgba(118,221,117,1) 0%, rgba(156,179,87,1) 100%);
+    width: 100%;
+    height: 100%;
+}
