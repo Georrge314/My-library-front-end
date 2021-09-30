@@ -5,37 +5,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/style.css">
 
-    <title>My library</title>
+    <link rel="icon" href="https://casperblog.imgix.net/blog/wp-content/uploads/2020/10/books-1200x880-1.png?auto=format" type="image/x-icon">
+    <title>My Library</title>
 </head>
 
 <body>
+    <div id="box">
 
-    <header>
-        <h2>My Library</h2>
-        <nav>
-            <article>
-                <a href="/">Sign in</a>
-                <a href="/">Sign up</a>
-                <a href="/">Books</a>
-            </article>
-            <article>
-                <a href="/">Sign out</a>
-                <a href="/">Create book</a>
-                <a href="/">Shopping-Basket</a>
-            </article>
-        </nav>
-    </header>
 
-    <main>
+        <header id="navigation">
+            <div id="navigation-items">
+                <h2><a class="home" href="/">My Library</a></h2>
+                <nav>
+                    <div>
+                        <a href="/">Books</a>
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div id="user">
+                        <div>
+                            <a href="/">Create Book</a>
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div>
+                            <a href="/">Sign out</a>
+                            <i class="fas fa-sign-out-alt"></i>
+                        </div>
+                        <div>
+                            <a href="/">Sign in</a>
+                            <i class="fas fa-sign-in-alt"></i>
+                        </div>
+                        <div>
+                            <a href="/">Sign up</a>
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
 
-    </main>
+        <main id="main-content">
+
+
+            <section id="home-page">
+
+                <div class="overview">
+                    <h1>Hello guest, welcome to My Library!</h1>
+                    <h3>
+                        My library is an application where you can access online book content. Here you can post books
+                        by
+                        making
+                        your own library and other people will be able to see and appreciate it!
+                    </h3>
+                </div>
+
+                <div id="create-library">
+                    <h1>Create your My Library account to get started!</h1>
+                    <button>Create Library</button>
+                </div>
+
+                <div id="categories">
+                    <h1>Categories</h1>
+                    <div class="category">
+                        <div class="image-wrap">
+                            <img src="/images/categories/Drama.jpg" href="/" alt="Drama">
+                        </div>
+                        <h3>Drama</h3>
+                    </div>
+                    <div class="category">
+                        <div class="image-wrap">
+                            <img src="/images/categories/Essays.jpg" href="/" alt="Essays">
+                        </div>
+                        <h3>Essays</h3>
+                    </div>
+                    <div class="category">
+                        <div class="image-wrap">
+                            <img src="/images/categories/Fantasy.jpg" href="/" alt="Fantasy">
+                        </div>
+                        <h3>Fantasy</h3>
+                    </div>
+                    <div class="category">
+                        <div class="image-wrap">
+                            <img src="/images/categories/Historical-Fiction .jpg" href="/" alt="Historical-Fiction">
+                        </div>
+                        <h3>Historical-Fiction</h3>
+                    </div>
+                </div>
+
+
+                <div id="top-rated">
+                    <h1>Top rated books</h1>
+                    <div class="image-wrap">
+                        <img src="/images/top-rated/Harry-Potter-1.jpg" href="/"
+                            alt="Harry Potter and the philosopher's stone">
+                    </div>
+                    <h3>Harry Potter and the philosopher's stone</h3>
+                    <div class="rating">
+                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                    </div>
+                    <div class="data-buttons">
+                        <a href="/" class="btn details-btn">Details</a>
+                    </div>
+
+                    <button id="see-all">See all</button>
+                </div>
+
+                <div id="back-to-top">
+                    <button id="back-to-top">Back to top</button>
+                </div>
+
+            </section>
+
+
+        </main>
+
+    </div>
+
 
     <footer>
 
     </footer>
 </body>
+
 </html>
