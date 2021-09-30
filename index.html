@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
 
-    <link rel="icon" href="https://casperblog.imgix.net/blog/wp-content/uploads/2020/10/books-1200x880-1.png?auto=format" type="image/x-icon">
+    <link rel="icon"
+        href="https://casperblog.imgix.net/blog/wp-content/uploads/2020/10/books-1200x880-1.png?auto=format"
+        type="image/x-icon">
     <title>My Library</title>
 </head>
 
@@ -46,26 +48,30 @@
         </header>
 
         <main id="main-content">
-
-
+            <!-- ---------------------------------------------------------------------------------------------------------------------------------------- -->
             <section id="home-page">
 
-                <div class="overview">
-                    <h1>Hello guest, welcome to My Library!</h1>
-                    <h3>
-                        My library is an application where you can access online book content. Here you can post books
-                        by
-                        making
-                        your own library and other people will be able to see and appreciate it!
-                    </h3>
-                </div>
 
-                <div id="create-library">
-                    <h1>Create your My Library account to get started!</h1>
-                    <button>Create Library</button>
-                </div>
+                <section id="welcome-message">
+                    <div class="overview">
+                        <h2>Hello guest, welcome to My Library!</h1>
+                        <h2>
+                            My library is an application where you can access online book content. Here you can post
+                            books
+                            by
+                            making
+                            your own library and other people will be able to see and appreciate it!
+                        </h2>
+                    </div>
 
-                <div id="categories">
+                    <div id="create-library">
+                        <h2>Create your My Library account to get started!</h2>
+                        <button id="btn-create-library" type="submit">Create Library</button>
+                    </div>
+                </section>
+
+
+                <section id="categories">
                     <h1>Categories</h1>
                     <div class="category">
                         <div class="image-wrap">
@@ -91,10 +97,11 @@
                         </div>
                         <h3>Historical-Fiction</h3>
                     </div>
-                </div>
+                </section>
 
 
-                <div id="top-rated">
+
+                <section id="top-rated">
                     <h1>Top rated books</h1>
                     <div class="image-wrap">
                         <img src="/images/top-rated/Harry-Potter-1.jpg" href="/"
@@ -109,11 +116,13 @@
                     </div>
 
                     <button id="see-all">See all</button>
-                </div>
+
+                </section>
 
                 <div id="back-to-top">
                     <button id="back-to-top">Back to top</button>
                 </div>
+
 
             </section>
 

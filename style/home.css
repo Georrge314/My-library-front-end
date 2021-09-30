@@ -1,4 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@1&display=swap');
+    /*              <section id="welcome-message">
+                        <div class="overview">
+                            <h1>Hello guest, welcome to My Library!</h1>
+                            <h3>
+                                My library is an application where you can access online book content. Here you can post
+                                books
+                                by
+                                making
+                                your own library and other people will be able to see and appreciate it!
+                            </h3>
+                        </div>
+
+                        <div id="create-library">
+                            <h1>Create your My Library account to get started!</h1>
+                            <button>Create Library</button>
+                        </div>
+                    </section> */
+
+#welcome-message {
+    background-color: rgb(211, 178, 32);
+    border-radius: 14px;
+    max-width: 55%;
+    padding: 4.5em;
+    margin: auto;    
+}
+
+#create-library {
+    background-color: rgb(92, 64, 14);
+    border-radius: 10px;
+    height: 7em;
+    color: white;
+    text-align: center;
+    padding: 0.5em;    
+}
+
+#btn-create-library {
+    background-color: rgb(211, 178, 32);
+    border-radius: 7px;
+    border-style: none;
+    color: black;
+    width: 17em;
+    height: 2.5em;
+}
+
+#btn-create-library:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
 
 /*
 main {
