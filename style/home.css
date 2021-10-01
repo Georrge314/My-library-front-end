@@ -36,45 +36,9 @@
     color: white;
 }
 
-
-/*              <section id="categories-wraper">
-
-                    <h1>Categories</h1>
-
-                    <section id="categories">
-                        <div class="category">
-                            <div class="image-wrap">
-                                <img src="/images/categories/Drama.jpg" href="/" alt="Drama">
-                            </div>
-                            <h3>Drama</h3>
-                        </div>
-                        <div class="category">
-                            <div class="image-wrap">
-                                <img src="/images/categories/Essays.jpg" href="/" alt="Essays">
-                            </div>
-                            <h3>Essays</h3>
-                        </div>
-                        <div class="category">
-                            <div class="image-wrap">
-                                <img src="/images/categories/Fantasy.jpg" href="/" alt="Fantasy">
-                            </div>
-                            <h3>Fantasy</h3>
-                        </div>
-                        <div class="category">
-                            <div class="image-wrap">
-                                <img src="/images/categories/Historical-Fiction .jpg" href="/" alt="Historical-Fiction">
-                            </div>
-                            <h3>Historical-Fiction</h3>
-                        </div>
-                    </section>
-
- 
- 
-                    </section> */
 #categories-wraper {
     min-width: 1100px;
     max-width: 1500px;
-    padding: 20px;
 }
 
 .categories-heading {
@@ -86,16 +50,96 @@
 
 #categories {
     display: flex;
-    justify-content: space-between;
+    flex-flow: wrap;
     padding: 30px;
+    height: 100%;
 }
 
 .category {
     padding: 50px;
+    height: 200px;
+}
+
+.category a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.category a h3:hover {
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 26%, rgba(255,249,249,1) 100%);
+    border-radius: 7px;
+    color: white;
 }
 
 .image-wrap img {
     height: 140px;
     width: 170px;
     border-radius: 17px;
+}
+                
+#top-rated-wraper {
+    min-width: 1100px;
+    max-width: 1500px;
+}
+
+#top-rated-heading {
+    white-space: initial;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+#top-rated-container {
+    display: flex;
+    flex-flow: wrap;
+    padding: 30px;
+    height: 100%;
+}
+
+.top-rated {
+    text-align: center;
+    padding: 50px;
+    height: 300px;
+    width: 200px;
+}
+
+.data-buttons {
+    margin-top: 30px;
+}
+
+.data-buttons a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.data-buttons a:hover {
+    color: black;
+    background-color: white;
+}
+
+#see-all {
+    min-width: 1100px;
+    max-width: 1500px;
+    text-align: center;
+    height: 50px;
+}
+
+#see-all-btn {
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    width: 120px;
+    height: 40px;
+}
+
+#see-all-btn:hover {
+    color: black;
+    background-color: white;
 }
