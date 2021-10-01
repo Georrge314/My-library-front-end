@@ -1,20 +1,9 @@
-    /*              <section id="welcome-message">
-                        <div class="overview">
-                            <h1>Hello guest, welcome to My Library!</h1>
-                            <h3>
-                                My library is an application where you can access online book content. Here you can post
-                                books
-                                by
-                                making
-                                your own library and other people will be able to see and appreciate it!
-                            </h3>
-                        </div>
+#home-page {
+    min-width: 1100px;
+    max-width: 1500px;
+    margin: auto;
+}
 
-                        <div id="create-library">
-                            <h1>Create your My Library account to get started!</h1>
-                            <button>Create Library</button>
-                        </div>
-                    </section> */
 
 #welcome-message {
     background-color: rgb(211, 178, 32);
@@ -48,43 +37,65 @@
 }
 
 
+/*              <section id="categories-wraper">
 
+                    <h1>Categories</h1>
 
+                    <section id="categories">
+                        <div class="category">
+                            <div class="image-wrap">
+                                <img src="/images/categories/Drama.jpg" href="/" alt="Drama">
+                            </div>
+                            <h3>Drama</h3>
+                        </div>
+                        <div class="category">
+                            <div class="image-wrap">
+                                <img src="/images/categories/Essays.jpg" href="/" alt="Essays">
+                            </div>
+                            <h3>Essays</h3>
+                        </div>
+                        <div class="category">
+                            <div class="image-wrap">
+                                <img src="/images/categories/Fantasy.jpg" href="/" alt="Fantasy">
+                            </div>
+                            <h3>Fantasy</h3>
+                        </div>
+                        <div class="category">
+                            <div class="image-wrap">
+                                <img src="/images/categories/Historical-Fiction .jpg" href="/" alt="Historical-Fiction">
+                            </div>
+                            <h3>Historical-Fiction</h3>
+                        </div>
+                    </section>
 
-
-
-/*
-main {
-    font-family: 'Old Standard TT', serif;
-    margin: auto;
+ 
+ 
+                    </section> */
+#categories-wraper {
+    min-width: 1100px;
+    max-width: 1500px;
+    padding: 20px;
 }
 
-.overview {
-    width: 50%;
-}
-
-.overview h3{
-    font-size: bold;
-}
-
-.create-library {
-    width: 50%;
-    margin-top: 5%;
+.categories-heading {
+    height: 40px;
     text-align: center;
-    height: 100px;
+    font-size: 25px;
+    padding-top: 20px;
 }
 
-.create-library button {
-    width: 40%;
-    height: 40%;
-    background-color: rgb(112, 81, 41);
-    color: white;
-    border-style: none;
-    border-radius: 7px;
+#categories {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
 }
 
-.categories {
-    width: 50%;
-    text-align: center;
+.category {
+    padding: 50px;
+}
 
-} */
+.image-wrap img {
+    height: 140px;
+    width: 170px;
+    border-radius: 17px;
+}
