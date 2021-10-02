@@ -6,4 +6,7 @@
 @import "navigation.css";
 @import "home.css";
 @import "register.css";
+@import "login.css";
+@import "create-book.css";
+@import "edit-book.css";
 @import "footer.css";
