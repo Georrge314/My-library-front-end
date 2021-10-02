@@ -16,7 +16,6 @@
 <body>
     <div id="box">
 
-
         <header id="navigation">
             <div id="navigation-items">
                 <h2><a class="home" href="/">My Library</a></h2>
@@ -48,7 +47,8 @@
         </header>
 
         <main id="main-content">
-            <!-- ---------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
             <section id="home-page">
 
 
@@ -181,6 +181,7 @@
                             </div>
                         </div>
 
+
                     </section>
 
                     <div id="see-all">
@@ -192,6 +193,30 @@
 
             </section>
 
+            <section id="register-page">
+                <form id="register-form" action="post">
+                    <div id="register-container">
+                        <label for="input-image">Insert profile image</label>
+                        <input type="file" id="input-image" name="image" required>
+
+                        <label for="username">Username</label>
+                        <input type="text" id="username" placeholder="Enter your username" required>
+
+                        <label for="email">Email address</label>
+                        <input type="text" id="email" placeholder="Enter your email address" required>
+
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password" required>
+
+                        <label for="repeatPassword">Repeat Password</label>
+                        <input type="password" id="repeatPassword" placeholder="Repeat your password" required>
+
+                        <div class="submit-container">
+                            <button type="submit">Register</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
 
         </main>
 
@@ -199,7 +224,7 @@
 
 
     <footer>
-        <div>
+        <div id="copyright">
             © Copyright 2021 Georgi Petrov
         </div>
         <div class="footer-icons">
@@ -211,6 +236,7 @@
         </div>
 
     </footer>
+
 </body>
 
 </html>

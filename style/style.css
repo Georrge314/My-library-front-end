@@ -2,7 +2,8 @@
 
 @import 'https://use.fontawesome.com/releases/v5.15.4/css/all.css';
 
-@import "navigation.css";
 @import "global.css";
+@import "navigation.css";
 @import "home.css";
+@import "register.css";
 @import "footer.css";

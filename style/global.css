@@ -1,6 +1,13 @@
+html {
+    background: url('http://i.stack.imgur.com/jGlzr.png') no-repeat 0 0 scroll;
+    background-color:#0C0C0C;
+    background-size: 100% 100%;
+}
+
 body {
     margin: 0px;
-    background-color: rgb(252, 224, 193);
     font-family: 'Old Standard TT', serif;
+    height:100%;
+    width:100%;
 }
 

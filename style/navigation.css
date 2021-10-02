@@ -1,7 +1,12 @@
 #navigation {
-    background-color: rgb(112, 81, 41);
+    background-image: url(../images/books-images/Wooden-Background.webp);
     width: 100%;
     margin: 0px;
+    height: 80px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    transition: top 0.3s;
 }
 
 #navigation-items {
@@ -9,6 +14,7 @@
     max-width: 1500px;
     display: flex;
     margin: auto;
+    padding-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
     align-items: center;
@@ -29,15 +35,16 @@
 
 
 #navigation h2, #navigation a {
+    font-weight: bold;
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 #navigation h2:hover, #navigation a:hover {
-    color: black;
+    color: rgb(120, 120, 120);
 }
 
 
 #navigation i{
-    color: rgb(192, 192, 192);
+    color: rgb(0, 0, 0);
 }
