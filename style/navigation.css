@@ -22,7 +22,7 @@
 }
 
 #navigation nav {
-    width: 55em;
+    width: 60em;
     display: flex;
     justify-content: space-between;
 }
@@ -56,6 +56,12 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+.dropdown {
+    width: 200px;
+    text-align: right;
+    margin-left: 20px;
 }
 
 .dropdown-btn {

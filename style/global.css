@@ -6,7 +6,8 @@ html {
 
 body {
     margin: 0px;
-    font-family: 'Old Standard TT', serif;
+    font-family: open sans;
+    /* font-family: 'Old Standard TT', serif; */
     height:100%;
     width:100%;
 }
