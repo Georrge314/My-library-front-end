@@ -4,9 +4,9 @@
     margin: 0px;
     height: 80px;
     overflow: hidden;
-    position: fixed;
+    /* position: fixed;
     top: 0;
-    transition: top 0.3s;
+    transition: top 0.3s; */
 }
 
 #navigation-items {
@@ -22,7 +22,7 @@
 }
 
 #navigation nav {
-    width: 45em;
+    width: 55em;
     display: flex;
     justify-content: space-between;
 }
@@ -47,4 +47,42 @@
 
 #navigation i{
     color: rgb(0, 0, 0);
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown-btn {
+    background: inherit;
+    border-style: none;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1em;
+}
+  
+.dropdown-content {
+    min-width: 220px;
+    background: url('http://i.stack.imgur.com/jGlzr.png');
+    position: absolute;
+    z-index: 1;
+    padding: 20px;
+    border-radius: 7px;
+    display: none;
+}  
+
+.dropdown-content a {
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid;
+    margin-bottom: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
