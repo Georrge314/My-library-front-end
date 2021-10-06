@@ -2,6 +2,8 @@
 
 @import 'https://use.fontawesome.com/releases/v5.15.4/css/all.css';
 
+@import url("https://fonts.googleapis.com/css?family=Roboto:100");
+
 @import "global.css";
 @import "navigation.css";
 @import "home.css";

@@ -1,6 +1,6 @@
 .navigation {
     width: 100%;
-    margin: 0px;
+    margin: 0;
     height: 60px;
 }
 
@@ -13,8 +13,8 @@
     max-width: 1500px;
     display: flex;
     margin: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 1em;
+    padding-right: 1em;
     align-items: center;
     justify-content: space-between;
 }
@@ -41,22 +41,12 @@
     display: flex;
 }
 
-/* BUG FIXED */
-.navigation-everyone > a {
-    display: none;
-}
-
 .all-books, .pricing {
     width: 30em;
     height: inherit;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-/* BUG FIXED */
-.pricing a:nth-child(1) {
-    display: none;
 }
 
 .all-books a, .pricing a {
@@ -66,7 +56,7 @@
 .all-books a:hover, .pricing a:hover {
     background-color: rgb(95,64,33);
     color: white;
-    height: 30px;
+    height: 1.8em;
     width: 100%;
     border-radius: 20px;
     margin: auto;
@@ -97,7 +87,7 @@
     color: white;
     background-color: rgb(95,64,33);
     border-radius: 20px;
-    height: 30px;
+    height: 1.9em;
     width: 100%;
 }
   
@@ -107,7 +97,7 @@
     position: absolute;
     top: 50px;
     z-index: 1;
-    padding: 20px;
+    padding: 1.5em;
     border-radius: 7px;
     display: none;
 }
@@ -118,7 +108,11 @@
     display: block;
     text-align: left;
     border-bottom: 1px solid;
-    margin-bottom: 15px;
+    margin-bottom: 1em;
+}
+
+.dropdown-content a:hover {
+    color: rgb(241, 193, 65);
 }
 
 .dropdown:hover .dropdown-content {
@@ -126,8 +120,8 @@
 }
 
 .user, .guest {
-    margin-right: 10px;
-    width: 20em;
+    padding-right: 0;
+    width: 17em;
     height: inherit;
     display: flex;
     justify-content: space-between;
@@ -136,11 +130,12 @@
 
 .user a {
     color: white;
-    width: 130px;
-    height: 30px;
+    width: 7em;
+    height: 1.9em;
     border-radius: 30px;
     font-size: 18px;
-    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -152,4 +147,23 @@
 
 .sign-up {
     background-color: rgb(95,64,33);
+}
+
+.sign-in:hover {
+    background-color: rgb(241, 193, 65);
+}
+
+.sign-up:hover {
+    background-color: rgb(241, 193, 65);
+}
+
+
+/* BUG FIXED */
+.navigation-everyone > a {
+    display: none;
+}
+
+/* BUG FIXED */
+.pricing a:nth-child(1) {
+    display: none;
 }
