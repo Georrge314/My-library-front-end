@@ -1,88 +1,120 @@
-#navigation {
-    background-image: url(../images/books-images/Wooden-Background.webp);
+.navigation {
     width: 100%;
     margin: 0px;
-    height: 80px;
-    overflow: hidden;
-    /* position: fixed;
-    top: 0;
-    transition: top 0.3s; */
+    height: 60px;
 }
 
-#navigation-items {
+.navigation a {
+    text-decoration: none;    
+}
+
+.navigation-items {
     min-width: 1100px;
     max-width: 1500px;
     display: flex;
     margin: auto;
-    padding-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
     align-items: center;
     justify-content: space-between;
 }
 
-#navigation nav {
-    width: 60em;
+.navigation-home{
+    width: 30em;
+}
+
+.navigation-home a {
+    color: rgb(95,64,33);
+}
+
+.navigation nav {
+    width: 80em;
+    height: 3em;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-#user, #guest{
-    width: 35em;
+.navigation-everyone {
+    width: 25em;
+    height: inherit;
     display: flex;
-    justify-content: space-between;
 }
 
-
-#navigation h2, #navigation a {
-    font-weight: bold;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+/* BUG FIXED */
+.navigation-everyone > a {
+    display: none;
 }
 
-#navigation h2:hover, #navigation a:hover {
-    color: rgb(120, 120, 120);
+.all-books, .pricing {
+    width: 30em;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-
-#navigation i{
-    color: rgb(0, 0, 0);
+/* BUG FIXED */
+.pricing a:nth-child(1) {
+    display: none;
 }
 
-.navbar a {
-    float: left;
-    font-size: 16px;
+.all-books a, .pricing a {
+    color: black;
+}
+
+.all-books a:hover, .pricing a:hover {
+    background-color: rgb(95,64,33);
     color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    height: 30px;
+    width: 100%;
+    border-radius: 20px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: pre-wrap;
 }
+
 
 .dropdown {
-    width: 200px;
-    text-align: right;
-    margin-left: 20px;
+    display: flex;
+    width: 40em;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
 }
 
 .dropdown-btn {
     background: inherit;
     border-style: none;
-    font-family: inherit;
-    font-weight: bold;
-    font-size: 1em;
+    font-size: inherit;
+    font-weight: 300;
+    margin: auto;
+}
+
+.dropdown-btn:hover {
+    color: white;
+    background-color: rgb(95,64,33);
+    border-radius: 20px;
+    height: 30px;
+    width: 100%;
 }
   
 .dropdown-content {
     min-width: 220px;
-    background: url('http://i.stack.imgur.com/jGlzr.png');
+    background: rgb(95,64,33);
     position: absolute;
+    top: 50px;
     z-index: 1;
     padding: 20px;
     border-radius: 7px;
     display: none;
-}  
+}
+
 
 .dropdown-content a {
+    color: white;
     display: block;
     text-align: left;
     border-bottom: 1px solid;
@@ -91,4 +123,33 @@
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.user, .guest {
+    margin-right: 10px;
+    width: 20em;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.user a {
+    color: white;
+    width: 130px;
+    height: 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-in {
+    background-color: rgb(120, 120, 120);
+}
+
+.sign-up {
+    background-color: rgb(95,64,33);
 }
