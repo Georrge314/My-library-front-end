@@ -75,7 +75,7 @@
     align-items: center;
 }
 
-.dropdown-btn {
+.dropdown-btn, .my-books {
     background: inherit;
     border-style: none;
     font-size: inherit;
@@ -83,7 +83,7 @@
     margin: auto;
 }
 
-.dropdown-btn:hover {
+.dropdown-btn:hover, .my-books:hover {
     color: white;
     background-color: rgb(95,64,33);
     border-radius: 20px;
@@ -92,7 +92,7 @@
 }
   
 .dropdown-content {
-    min-width: 220px;
+    min-width: 200px;
     background: rgb(95,64,33);
     position: absolute;
     top: 50px;
@@ -100,6 +100,7 @@
     padding: 1.5em;
     border-radius: 7px;
     display: none;
+    font-size: 12px;
 }
 
 
@@ -110,6 +111,7 @@
     border-bottom: 1px solid;
     margin-bottom: 1em;
 }
+
 
 .dropdown-content a:hover {
     color: rgb(241, 193, 65);
@@ -133,7 +135,7 @@
     width: 7em;
     height: 1.9em;
     border-radius: 30px;
-    font-size: 18px;
+    font-size: inherit;
     margin-top: auto;
     margin-bottom: auto;
     display: flex;
@@ -155,6 +157,47 @@
 
 .sign-up:hover {
     background-color: rgb(241, 193, 65);
+}
+
+.profile-link {
+    height: 100% !important;
+}
+
+.profile-link .profile-img {
+    height: 2em;
+    width: 1.8em;
+    border: 0.15em solid rgb(95,64,33);
+    border-radius: 100%;
+    margin-right: 0.5em;
+}
+
+.user-dropdown-content {
+    min-height: 1em;
+    background: rgb(95,64,33);
+    position: absolute;
+    top: 55px;
+    z-index: 1;
+    padding: 1em;
+    border-radius: 7px;
+    display: none;
+}
+
+.user-dropdown-content .item {
+    font-size: 0.7em;
+    width: 8em;
+    color: white;
+    border-bottom: 1px solid;
+    margin-bottom: 1em;
+    border-radius: 0;
+    justify-content: left;
+}
+
+.user-dropdown:hover .user-dropdown-content {
+    display: block;
+}
+
+.user-dropdown-content a:hover {
+    color: rgb(241, 193, 65);
 }
 
 
