@@ -15,8 +15,8 @@
 }
 
 .overview, #create-library{
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 17px;
+    font-weight: 300;
 }
 
 #create-library {
@@ -29,16 +29,16 @@
 }
 
 #btn-create-library {
-    background-color: rgb(211, 178, 32);
+    background-color: rgb(120, 120, 120);
     border-radius: 7px;
     border-style: none;
-    color: black;
+    color: white;
     width: 17em;
     height: 2.5em;
 }
 
 #btn-create-library:hover {
-    background-color: rgb(31, 38,46);
+    background-color: rgb(211, 178, 32);
     color: white;
 }
 
