@@ -9,18 +9,18 @@
 
 #info-section {
     display: flex;
+    padding: 3em;
 }
 
 .info-summary {
-    padding: 30px;
     justify-content: space-between;
 }
 
 .info-summary .text {
-    border-radius: 10px;
-    padding: 40px;
-    background-color: white;
+    padding: 0 10em 0 10em;
     color: black;
+    text-align: left;
+    line-height: 1.5em;
 }
 
 .info-container img {
@@ -37,11 +37,40 @@
     margin: auto;
 }
 
-.info-summary .info-btn {
-    background-color: black;
+.info-buttons button {
     border-style: none;
+    border-radius: 7px;
     color: white;
     text-decoration: none;
-    width: 150px;
-    height: 30px;
+    justify-content: center;
+    width: 8em;
+    height: 2.2em;
+}
+
+.info-buttons button:hover, .comments-buttons button:hover {
+    background-color: rgb(241, 193, 65);
+}
+
+.info-btn-edit, .info-btn-delete {
+    background-color: rgb(120, 120, 120);
+}
+
+.info-btn-buy, .info-btn-read {
+    background-color: rgb(95, 64, 33);
+}
+
+.comments-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    height: 2.2em;
+    width: 30%;
+}
+
+.comments-buttons button {
+    background-color: rgb(31,38,46);
+    color: white;
+    border-style: none;
+    border-radius: 7px;
+    width: 8em;
 }
