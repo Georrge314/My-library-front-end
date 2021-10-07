@@ -5,11 +5,18 @@
 }
 
 #welcome-message {
-    background-image: url(../images/books-images/book-page-2.jpg);
+    background-color: rgb(95, 64, 33);
+    color: white;
     border-radius: 14px;
     max-width: 55%;
-    padding: 4.5em;
-    margin: auto;    
+    padding: 2.5em;
+    padding-bottom: 0;
+    margin: 2em auto;    
+}
+
+.overview, #create-library{
+    font-size: 20px;
+    font-weight: 400;
 }
 
 #create-library {
@@ -31,7 +38,7 @@
 }
 
 #btn-create-library:hover {
-    background-color: black;
+    background-color: rgb(31, 38,46);
     color: white;
 }
 
