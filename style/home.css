@@ -94,26 +94,26 @@
 }
 
 #top-rated-container {
-    width: 85%;
+    width: 80%;
     margin: auto;
     display: flex;
     flex-flow: wrap;
     padding: auto;
-    justify-content: center;
+    justify-content: left;
     padding: 3em;
 }
 
-.top-rated {    
+.book {    
     text-align: center;
     padding: 20px;
     width: 200px;
 }
 
-.top-rated h3 {
+.book h3 {
     height: 3em;
 }
 
-.top-rated .rating {
+.book .rating {
     margin-bottom: 1em;
 }
 
@@ -123,7 +123,7 @@
     border-radius: 17px;
 }
 
-.top-rated .image-wrap img{
+.book .image-wrap img{
     width: 150px;
     height: 230px;
 }

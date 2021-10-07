@@ -112,7 +112,7 @@
                     </div>
 
                     <section id="top-rated-container">
-                        <div class="top-rated">
+                        <div class="book">
                             <div class="image-wrap">
                                 <img src="/images/top-rated/Harry-Potter-1.jpg" href="/"
                                     alt="Harry Potter and the philosopher's stone">
@@ -136,7 +136,7 @@
                                 <a href="/" class="btn details-btn">Details</a>
                             </div>
                         </div>
-                        <div class="top-rated">
+                        <div class="book">
                             <div class="image-wrap">
                                 <img src="https://images-na.ssl-images-amazon.com/images/I/91hPXkwnaeL.jpg" href="/"
                                     alt="Game of Thrones">
@@ -160,7 +160,7 @@
                                 <a href="/" class="btn details-btn">Details</a>
                             </div>
                         </div>
-                        <div class="top-rated">
+                        <div class="book">
                             <div class="image-wrap">
                                 <img src="https://images-na.ssl-images-amazon.com/images/I/91hPXkwnaeL.jpg" href="/"
                                     alt="Game of Thrones">
@@ -184,7 +184,7 @@
                                 <a href="/" class="btn details-btn">Details</a>
                             </div>
                         </div>
-                        <div class="top-rated">
+                        <div class="book">
                             <div class="image-wrap">
                                 <img src="https://images-na.ssl-images-amazon.com/images/I/91hPXkwnaeL.jpg" href="/"
                                     alt="Game of Thrones">
@@ -208,7 +208,7 @@
                                 <a href="/" class="btn details-btn">Details</a>
                             </div>
                         </div>
-                        <div class="top-rated">
+                        <div class="book">
                             <div class="image-wrap">
                                 <img src="https://images-na.ssl-images-amazon.com/images/I/91hPXkwnaeL.jpg" href="/"
                                     alt="Game of Thrones">
@@ -232,7 +232,7 @@
                                 <a href="/" class="btn details-btn">Details</a>
                             </div>
                         </div>
-                        <div class="top-rated">
+                        <div class="book">
                             <div class="image-wrap">
                                 <img src="https://images-na.ssl-images-amazon.com/images/I/91hPXkwnaeL.jpg" href="/"
                                     alt="Game of Thrones">
@@ -256,7 +256,7 @@
                                 <a href="/" class="btn details-btn">Details</a>
                             </div>
                         </div>
-                        <div class="top-rated">
+                        <div class="book">
                             <div class="image-wrap">
                                 <img src="https://images-na.ssl-images-amazon.com/images/I/91hPXkwnaeL.jpg" href="/"
                                     alt="Game of Thrones">
@@ -280,7 +280,7 @@
                                 <a href="/" class="btn details-btn">Details</a>
                             </div>
                         </div>
-                        <div class="top-rated">
+                        <div class="book">
                             <div class="image-wrap">
                                 <img src="https://images-na.ssl-images-amazon.com/images/I/91hPXkwnaeL.jpg" href="/"
                                     alt="Game of Thrones">
@@ -304,7 +304,7 @@
                                 <a href="/" class="btn details-btn">Details</a>
                             </div>
                         </div>
-                        <div class="top-rated">
+                        <div class="book">
                             <div class="image-wrap">
                                 <img src="https://images-na.ssl-images-amazon.com/images/I/91hPXkwnaeL.jpg" href="/"
                                     alt="Game of Thrones">
@@ -328,7 +328,7 @@
                                 <a href="/" class="btn details-btn">Details</a>
                             </div>
                         </div>
-                        <div class="top-rated">
+                        <div class="book">
                             <div class="image-wrap">
                                 <img src="https://images-na.ssl-images-amazon.com/images/I/91hPXkwnaeL.jpg" href="/"
                                     alt="Game of Thrones">
@@ -362,16 +362,18 @@
 
 
                 <section id="register-page">
-                    <form id="register-form" action="post">
-                        <div id="register-container">
-                            <label for="input-image">Insert profile image</label>
-                            <input type="file" id="input-image" name="image" required>
+                    <form class="register-login-form" action="post">
+                        <div class="register-login-container">
+                            <label class="custom-file-upload" for="input-image">
+                                <input type="file" id="input-image" name="image" required>
+                                Click to insert profile image <i class="far fa-file-image"></i>
+                            </label>
 
                             <label for="username">Username</label>
                             <input type="text" id="username" placeholder="Enter your username" required>
 
                             <label for="email">Email address</label>
-                            <input type="text" id="email" placeholder="Enter your email address" required>
+                            <input type="email" id="email" placeholder="Enter your email address" required>
 
                             <label for="password">Password</label>
                             <input type="password" id="password" placeholder="Enter your password" required>
@@ -379,7 +381,7 @@
                             <label for="repeatPassword">Repeat Password</label>
                             <input type="password" id="repeatPassword" placeholder="Repeat your password" required>
 
-                            <div class="submit-container">
+                            <div class="submit-container-user">
                                 <button type="submit">Register</button>
                             </div>
                         </div>
@@ -387,11 +389,11 @@
                 </section>
 
                 <section id="login-page">
-                    <form id="login-form" action="post">
-                        <div id="login-container">
+                    <form class="register-login-form" action="post">
+                        <div class="register-login-container">
 
                             <label for="email">Email address</label>
-                            <input type="text" id="email" placeholder="Enter your email address" required>
+                            <input type="email" id="email" placeholder="Enter your email address" required>
 
                             <label for="password">Password</label>
                             <input type="password" id="password" placeholder="Enter your password" required>
@@ -399,7 +401,7 @@
                             <label for="repeatPassword">Repeat Password</label>
                             <input type="password" id="repeatPassword" placeholder="Repeat your password" required>
 
-                            <div class="submit-container">
+                            <div class="submit-container-user">
                                 <button type="submit">Login</button>
                             </div>
                         </div>
@@ -559,14 +561,18 @@
                         </form>
 
                         <div id="book-container">
-                            <div class="top-rated">
+                            <div class="book">
                                 <div class="image-wrap">
-                                    <img src="/images/top-rated/Harry-Potter-1.jpg" href="/"
-                                        alt="Harry Potter and the philosopher's stone">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/91hPXkwnaeL.jpg" href="/"
+                                        alt="Game of Thrones">
                                 </div>
-                                <h3>Harry Potter and the philosopher's stone</h3>
+                                <h3>Game of Thrones</h3>
                                 <div class="rating">
-                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
                                     <span>1,986</span>
                                 </div>
                                 <div class="price">
@@ -579,14 +585,18 @@
                                     <a href="/" class="btn details-btn">Details</a>
                                 </div>
                             </div>
-                            <div class="top-rated">
+                            <div class="book">
                                 <div class="image-wrap">
-                                    <img src="/images/top-rated/Harry-Potter-1.jpg" href="/"
-                                        alt="Harry Potter and the philosopher's stone">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/91hPXkwnaeL.jpg" href="/"
+                                        alt="Game of Thrones">
                                 </div>
-                                <h3>Harry Potter and the philosopher's stone</h3>
+                                <h3>Game of Thrones</h3>
                                 <div class="rating">
-                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
                                     <span>1,986</span>
                                 </div>
                                 <div class="price">
@@ -599,14 +609,18 @@
                                     <a href="/" class="btn details-btn">Details</a>
                                 </div>
                             </div>
-                            <div class="top-rated">
+                            <div class="book">
                                 <div class="image-wrap">
-                                    <img src="/images/top-rated/Harry-Potter-1.jpg" href="/"
-                                        alt="Harry Potter and the philosopher's stone">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/91hPXkwnaeL.jpg" href="/"
+                                        alt="Game of Thrones">
                                 </div>
-                                <h3>Harry Potter and the philosopher's stone</h3>
+                                <h3>Game of Thrones</h3>
                                 <div class="rating">
-                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
                                     <span>1,986</span>
                                 </div>
                                 <div class="price">
@@ -619,14 +633,380 @@
                                     <a href="/" class="btn details-btn">Details</a>
                                 </div>
                             </div>
-                            <div class="top-rated">
+
+                            <div class="book">
                                 <div class="image-wrap">
-                                    <img src="/images/top-rated/Harry-Potter-1.jpg" href="/"
-                                        alt="Harry Potter and the philosopher's stone">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/91hPXkwnaeL.jpg" href="/"
+                                        alt="Game of Thrones">
                                 </div>
-                                <h3>Harry Potter and the philosopher's stone</h3>
+                                <h3>Game of Thrones</h3>
                                 <div class="rating">
-                                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>1,986</span>
+                                </div>
+                                <div class="price">
+                                    <span class="price-symbol">$</span>
+                                    <span class="price-whole">12</span>
+                                    <span class="price-decimal">.</span>
+                                    <span class="price-fraction">25</span>
+                                </div>
+                                <div class="data-buttons">
+                                    <a href="/" class="btn details-btn">Details</a>
+                                </div>
+                            </div>
+                            <div class="book">
+                                <div class="image-wrap">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/91hPXkwnaeL.jpg" href="/"
+                                        alt="Game of Thrones">
+                                </div>
+                                <h3>Game of Thrones</h3>
+                                <div class="rating">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>1,986</span>
+                                </div>
+                                <div class="price">
+                                    <span class="price-symbol">$</span>
+                                    <span class="price-whole">12</span>
+                                    <span class="price-decimal">.</span>
+                                    <span class="price-fraction">25</span>
+                                </div>
+                                <div class="data-buttons">
+                                    <a href="/" class="btn details-btn">Details</a>
+                                </div>
+                            </div>
+
+                            <div class="book">
+                                <div class="image-wrap">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/91hPXkwnaeL.jpg" href="/"
+                                        alt="Game of Thrones">
+                                </div>
+                                <h3>Game of Thrones</h3>
+                                <div class="rating">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>1,986</span>
+                                </div>
+                                <div class="price">
+                                    <span class="price-symbol">$</span>
+                                    <span class="price-whole">12</span>
+                                    <span class="price-decimal">.</span>
+                                    <span class="price-fraction">25</span>
+                                </div>
+                                <div class="data-buttons">
+                                    <a href="/" class="btn details-btn">Details</a>
+                                </div>
+                            </div>
+                            <div class="book">
+                                <div class="image-wrap">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/91hPXkwnaeL.jpg" href="/"
+                                        alt="Game of Thrones">
+                                </div>
+                                <h3>Game of Thrones</h3>
+                                <div class="rating">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>1,986</span>
+                                </div>
+                                <div class="price">
+                                    <span class="price-symbol">$</span>
+                                    <span class="price-whole">12</span>
+                                    <span class="price-decimal">.</span>
+                                    <span class="price-fraction">25</span>
+                                </div>
+                                <div class="data-buttons">
+                                    <a href="/" class="btn details-btn">Details</a>
+                                </div>
+                            </div>
+                            <div class="book">
+                                <div class="image-wrap">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/91hPXkwnaeL.jpg" href="/"
+                                        alt="Game of Thrones">
+                                </div>
+                                <h3>Game of Thrones</h3>
+                                <div class="rating">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>1,986</span>
+                                </div>
+                                <div class="price">
+                                    <span class="price-symbol">$</span>
+                                    <span class="price-whole">12</span>
+                                    <span class="price-decimal">.</span>
+                                    <span class="price-fraction">25</span>
+                                </div>
+                                <div class="data-buttons">
+                                    <a href="/" class="btn details-btn">Details</a>
+                                </div>
+                            </div>
+                            <div class="book">
+                                <div class="image-wrap">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/91hPXkwnaeL.jpg" href="/"
+                                        alt="Game of Thrones">
+                                </div>
+                                <h3>Game of Thrones</h3>
+                                <div class="rating">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>1,986</span>
+                                </div>
+                                <div class="price">
+                                    <span class="price-symbol">$</span>
+                                    <span class="price-whole">12</span>
+                                    <span class="price-decimal">.</span>
+                                    <span class="price-fraction">25</span>
+                                </div>
+                                <div class="data-buttons">
+                                    <a href="/" class="btn details-btn">Details</a>
+                                </div>
+                            </div>
+                            <div class="book">
+                                <div class="image-wrap">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/91hPXkwnaeL.jpg" href="/"
+                                        alt="Game of Thrones">
+                                </div>
+                                <h3>Game of Thrones</h3>
+                                <div class="rating">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>1,986</span>
+                                </div>
+                                <div class="price">
+                                    <span class="price-symbol">$</span>
+                                    <span class="price-whole">12</span>
+                                    <span class="price-decimal">.</span>
+                                    <span class="price-fraction">25</span>
+                                </div>
+                                <div class="data-buttons">
+                                    <a href="/" class="btn details-btn">Details</a>
+                                </div>
+                            </div>
+                            <div class="book">
+                                <div class="image-wrap">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/91hPXkwnaeL.jpg" href="/"
+                                        alt="Game of Thrones">
+                                </div>
+                                <h3>Game of Thrones</h3>
+                                <div class="rating">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>1,986</span>
+                                </div>
+                                <div class="price">
+                                    <span class="price-symbol">$</span>
+                                    <span class="price-whole">12</span>
+                                    <span class="price-decimal">.</span>
+                                    <span class="price-fraction">25</span>
+                                </div>
+                                <div class="data-buttons">
+                                    <a href="/" class="btn details-btn">Details</a>
+                                </div>
+                            </div>
+                            <div class="book">
+                                <div class="image-wrap">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/91hPXkwnaeL.jpg" href="/"
+                                        alt="Game of Thrones">
+                                </div>
+                                <h3>Game of Thrones</h3>
+                                <div class="rating">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>1,986</span>
+                                </div>
+                                <div class="price">
+                                    <span class="price-symbol">$</span>
+                                    <span class="price-whole">12</span>
+                                    <span class="price-decimal">.</span>
+                                    <span class="price-fraction">25</span>
+                                </div>
+                                <div class="data-buttons">
+                                    <a href="/" class="btn details-btn">Details</a>
+                                </div>
+                            </div>
+                            <div class="book">
+                                <div class="image-wrap">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/91hPXkwnaeL.jpg" href="/"
+                                        alt="Game of Thrones">
+                                </div>
+                                <h3>Game of Thrones</h3>
+                                <div class="rating">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>1,986</span>
+                                </div>
+                                <div class="price">
+                                    <span class="price-symbol">$</span>
+                                    <span class="price-whole">12</span>
+                                    <span class="price-decimal">.</span>
+                                    <span class="price-fraction">25</span>
+                                </div>
+                                <div class="data-buttons">
+                                    <a href="/" class="btn details-btn">Details</a>
+                                </div>
+                            </div>
+                            <div class="book">
+                                <div class="image-wrap">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/91hPXkwnaeL.jpg" href="/"
+                                        alt="Game of Thrones">
+                                </div>
+                                <h3>Game of Thrones</h3>
+                                <div class="rating">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>1,986</span>
+                                </div>
+                                <div class="price">
+                                    <span class="price-symbol">$</span>
+                                    <span class="price-whole">12</span>
+                                    <span class="price-decimal">.</span>
+                                    <span class="price-fraction">25</span>
+                                </div>
+                                <div class="data-buttons">
+                                    <a href="/" class="btn details-btn">Details</a>
+                                </div>
+                            </div>
+                            <div class="book">
+                                <div class="image-wrap">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/91hPXkwnaeL.jpg" href="/"
+                                        alt="Game of Thrones">
+                                </div>
+                                <h3>Game of Thrones</h3>
+                                <div class="rating">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>1,986</span>
+                                </div>
+                                <div class="price">
+                                    <span class="price-symbol">$</span>
+                                    <span class="price-whole">12</span>
+                                    <span class="price-decimal">.</span>
+                                    <span class="price-fraction">25</span>
+                                </div>
+                                <div class="data-buttons">
+                                    <a href="/" class="btn details-btn">Details</a>
+                                </div>
+                            </div>
+                            <div class="book">
+                                <div class="image-wrap">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/91hPXkwnaeL.jpg" href="/"
+                                        alt="Game of Thrones">
+                                </div>
+                                <h3>Game of Thrones</h3>
+                                <div class="rating">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>1,986</span>
+                                </div>
+                                <div class="price">
+                                    <span class="price-symbol">$</span>
+                                    <span class="price-whole">12</span>
+                                    <span class="price-decimal">.</span>
+                                    <span class="price-fraction">25</span>
+                                </div>
+                                <div class="data-buttons">
+                                    <a href="/" class="btn details-btn">Details</a>
+                                </div>
+                            </div>
+                            <div class="book">
+                                <div class="image-wrap">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/91hPXkwnaeL.jpg" href="/"
+                                        alt="Game of Thrones">
+                                </div>
+                                <h3>Game of Thrones</h3>
+                                <div class="rating">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>1,986</span>
+                                </div>
+                                <div class="price">
+                                    <span class="price-symbol">$</span>
+                                    <span class="price-whole">12</span>
+                                    <span class="price-decimal">.</span>
+                                    <span class="price-fraction">25</span>
+                                </div>
+                                <div class="data-buttons">
+                                    <a href="/" class="btn details-btn">Details</a>
+                                </div>
+                            </div>
+                            <div class="book">
+                                <div class="image-wrap">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/91hPXkwnaeL.jpg" href="/"
+                                        alt="Game of Thrones">
+                                </div>
+                                <h3>Game of Thrones</h3>
+                                <div class="rating">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <span>1,986</span>
+                                </div>
+                                <div class="price">
+                                    <span class="price-symbol">$</span>
+                                    <span class="price-whole">12</span>
+                                    <span class="price-decimal">.</span>
+                                    <span class="price-fraction">25</span>
+                                </div>
+                                <div class="data-buttons">
+                                    <a href="/" class="btn details-btn">Details</a>
+                                </div>
+                            </div>
+                            <div class="book">
+                                <div class="image-wrap">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/91hPXkwnaeL.jpg" href="/"
+                                        alt="Game of Thrones">
+                                </div>
+                                <h3>Game of Thrones</h3>
+                                <div class="rating">
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
                                     <span>1,986</span>
                                 </div>
                                 <div class="price">
