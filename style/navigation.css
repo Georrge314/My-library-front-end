@@ -101,6 +101,21 @@
     border-radius: 7px;
     display: none;
     font-size: 12px;
+    height: 300px;
+    overflow: hidden;
+}
+
+/* BUG FIXED */
+.dropdown-content > a {
+    display: none !important;
+}
+
+.dropdown-content-a {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 17px;
+    box-sizing: content-box;
 }
 
 
