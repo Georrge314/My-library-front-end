@@ -20,6 +20,9 @@
 
 #filters-container > input {
     border: 3px solid rgb(95,64,33);
+    height: 1.6em;
+    font-size: 20px;
+    border-radius: 7px;
 }
 
 #category-select {

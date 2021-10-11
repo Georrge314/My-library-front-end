@@ -1,33 +1,37 @@
-/* #create-page {
+#create-page, #edit-page {
     min-width: 1100px;
     max-width: 1500px;
     height: 800px;
     margin: 30px auto;
 }
 
-#create-form {
+.create-edit-form {
     text-align: center;
     height: 100%;
 }
 
-#create-container {
+.create-edit-container {
     padding-top: 50px;
     height: 100%;
 }
 
-#create-form label {
+.create-edit-form label {
     font-size: 18px;
     font-weight: bold;
     display: block;
     margin-top: 30px;
 }
 
-input[type="text"], input[type="password"] {
+.create-edit-container input {
     font-size: 18px;
     width: 300px;
     height: 40px;
     border-radius: 7px;
-    border-style: none;
+    border: 3px solid rgb(95, 64, 33);
+}
+
+.create-edit-container textarea {
+    border: 3px solid rgb(95, 64, 33);
 }
 
 .submit-container {
@@ -35,7 +39,7 @@ input[type="text"], input[type="password"] {
 }
 
 .submit-container button {
-    background-color: black;
+    background-color: rgb(95, 64, 33);
     color: white;
     border-style: none;
     border-radius: 7px;
@@ -45,7 +49,15 @@ input[type="text"], input[type="password"] {
 }
 
 .submit-container button:hover {
-    background-color: white;
-    color: black;  
+    background-color: rgb(241, 193, 65);
 }
- */
+
+.create-edit-category {
+    border: 3px solid rgb(95,64,33);
+    text-align: center;
+    font-size: 20px;
+    border-radius: 7px;
+    color: white;
+    background-color: rgb(95, 64, 33);
+    height: 2em;
+}
