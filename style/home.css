@@ -4,7 +4,7 @@
     margin: auto;
 }
 
-#welcome-message {
+.welcome-message {
     background-color: rgb(95, 64, 33);
     color: white;
     border-radius: 14px;
@@ -14,12 +14,12 @@
     margin: 2em auto;    
 }
 
-.overview, #create-library{
+.overview, .create-library{
     font-size: 17px;
     font-weight: 300;
 }
 
-#create-library {
+.create-library {
     background-color: rgb(92, 64, 14);
     border-radius: 10px;
     height: 7em;
@@ -28,64 +28,30 @@
     padding: 0.5em;    
 }
 
-#btn-create-library {
+.create-library a {
     background-color: rgb(120, 120, 120);
     border-radius: 7px;
     border-style: none;
     color: white;
     width: 17em;
     height: 2.5em;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px;
 }
 
-#btn-create-library:hover {
+.create-library a:hover {
     background-color: rgb(211, 178, 32);
     color: white;
 }
 
-#categories-wraper {
-    min-width: 1100px;
-    max-width: 1500px;
-}
-
-.categories-heading {
-    height: 40px;
-    text-align: center;
-    font-size: 25px;
-    padding-top: 20px;
-}
-
-#categories {
-    display: flex;
-    flex-flow: wrap;
-    padding: 30px;
-    height: 100%;
-}
-
-.category {
-    padding: 50px;
-    height: 200px;
-}
-
-.category a{
-    text-decoration: none;
-    text-align: center;
-    color: black;
-}
-
-.category a h3:hover {
-    background: rgb(0,0,0);
-    background: radial-gradient(circle, rgba(0,0,0,1) 26%, rgba(255,249,249,1) 100%);
-    border-radius: 7px;
-    color: white;
-}
-
-#top-rated-wraper {
+.top-rated-wraper {
     min-width: 1100px;
     max-width: 1500px;
 }
 
 
-#top-rated-heading {
+.top-rated-heading {
     white-space: initial;
     height: 40px;
     text-align: center;
@@ -93,7 +59,11 @@
     padding-top: 20px;
 }
 
-#top-rated-container {
+.top-rated-heading h1 {
+    font-weight: 300;
+}
+
+.top-rated-container {
     width: 80%;
     margin: auto;
     display: flex;
@@ -128,22 +98,6 @@
     height: 230px;
 }
 
-.data-buttons {
-    margin-top: 30px;
-}
-
-.data-buttons a {
-    text-decoration: none;
-    color: white;
-    background-color: rgb(95, 64, 33);
-    border-radius: 7px;
-    padding: 10px;
-}
-
-.data-buttons a:hover {
-    background-color: rgb(241, 193, 65);
-}
-
 #see-all {
     min-width: 1100px;
     max-width: 1500px;
@@ -151,7 +105,7 @@
     height: 50px;
 }
 
-#see-all-btn {
+#see-all a {
     font-size: 18px;
     background-color: rgb(95, 64, 33);
     color: white;
@@ -159,8 +113,10 @@
     border-style: none;
     width: 120px;
     height: 40px;
+    text-decoration: none;
+    padding: 10px;
 }
 
-#see-all-btn:hover {
+#see-all a:hover {
     background-color: rgb(241, 193, 65);
 }

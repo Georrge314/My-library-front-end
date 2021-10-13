@@ -1,4 +1,4 @@
-import {render} from '../node_modules/lit-html/lit-html.js';
+import { render } from '../node_modules/lit-html/lit-html.js';
 
 let viewContainer = undefined;
 let navContainer = undefined;

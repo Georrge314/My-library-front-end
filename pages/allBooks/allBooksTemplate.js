@@ -33,15 +33,15 @@ export let allBooksTemplate = (form, allBooks) => html`
     <div id="books-container">
         <form @submit=${form.submitHandler} id="filters-form" method="get">
             <div id="filters-container">
-                <input autocomplete="on" type="text" name="search" placeholder="Search books...">
+                <input name="searchText" autocomplete="on" type="text" name="search" placeholder="Search books...">
                 <i id="search-icon" class="fas fa-search"></i>
 
-                <select name="category-select" data-filter-multiple="true" id="category-select">
+                <select name="category" data-filter-multiple="true" id="category-select">
 
                     <optgroup label="Categories">
+                        <option value="all">All</option>
                         <option value="adventure">Adventure</option>
-                        <option value="biography-and-authorbiography">Biography And Authorbiography
-                        </option>
+                        <option value="biography-and-authorbiography">Biography And Authorbiography</option>
                         <option value="classic">Classic</option>
                         <option value="comic">Comic</option>
                         <option value="cookbook">Cookbook</option>
@@ -67,11 +67,14 @@ export let allBooksTemplate = (form, allBooks) => html`
                 </select>
 
             </div>
+            <div class="submit-conteiner-filter">
+                <button type="submit">Search</button>
+            </div>
         </form>
 
         <div id="book-container">
             ${allBooks.lenght === 0 
-            ? html`<p>No books yet!</p>`
+            ? html`<p>No books found</p>`
             : allBooks.map(b => singleBookTemplate(b))
             }
         </div>

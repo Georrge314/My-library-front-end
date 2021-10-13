@@ -1,6 +1,6 @@
 import { navigationTemplate } from "./navigationTemplate.js";
 
-import {authService} from "../services/authService.js";
+import authService from "../services/authService.js";
 
 async function getView(context, next) {
     let navInfo = {

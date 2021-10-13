@@ -4,9 +4,9 @@ import { html } from '../../node_modules/lit-html/lit-html.js';
 export let singleBookTemplate = (book) => html`
 <div class="book">
     <div class="image-wrap">
-        <img src="/images/top-rated/Harry-Potter-1.jpg" href="/" alt="Harry Potter and the philosopher's stone">
+        <img src=${book.image} alt=${book.title}>
     </div>
-    <h3>Harry Potter and the philosopher's stone</h3>
+    <h3>${book.title}</h3>
     <div class="rating">
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
@@ -22,19 +22,18 @@ export let singleBookTemplate = (book) => html`
         <span class="price-fraction">25</span>
     </div>
     <div class="data-buttons">
-        <a href="/" class="btn details-btn">Details</a>
+        <a href="/details-book" class="btn details-btn">Details</a>
     </div>
-</div>
-`;
+</div>`;
 
-export let homeTemplate = (topRatedBooks, isLoggedIn, getUsername) => html`
+export let homeTemplate = (topRatedBooks, isLoggedIn, username) => html`
 <section id="home-page">
 
-    <section id="welcome-message">
+    <section class="welcome-message">
         <div class="overview">
             ${isLoggedIn 
-            ? html`<p>Hello, ${getUsername} welcome to Bibliotek</p>`
-            : html`<p>Hello, welcome to Bibliotek</p>`
+            ? html`<p>Hello, ${username} welcome to Bibliotek</p>`
+            : html`<p>Welcome to Bibliotek</p>`
             }
             <p>
                 Bibliotek is an application where you can access online book content. Here you can read,
@@ -44,24 +43,24 @@ export let homeTemplate = (topRatedBooks, isLoggedIn, getUsername) => html`
         </div>
 
         ${isLoggedIn
-        ? html ``
+        ? null
         : html`
-        <div id="create-library">
+        <div class="create-library">
             <p>Create your Bibliotek account to get started!</p>
-            <button id="btn-create-library" type="submit">Create Account</button>
+            <a href="/register">Create Account</a>
         </div>`
         }
         
     </section>
 
 
-    <section id="top-rated-wraper">
+    <section class="top-rated-wraper">
 
-        <div id="top-rated-heading">
+        <div class="top-rated-heading">
             <h1>Top rated books</h1>
         </div>
 
-        <section id="top-rated-container">
+        <section class="top-rated-container">
             ${topRatedBooks.length === 0
            ? html`<p class="no-articles">No books yet.</p>`
             : topRatedBooks.map(b => singleBookTemplate(b))
@@ -69,7 +68,7 @@ export let homeTemplate = (topRatedBooks, isLoggedIn, getUsername) => html`
         </section>
 
         <div id="see-all">
-            <button id="see-all-btn">See all</button>
+            <a href="/all-books">See all</a>
         </div>
     </section>
 </section>`;

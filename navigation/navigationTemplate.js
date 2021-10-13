@@ -7,7 +7,7 @@ export let navigationTemplate = (navInfo) => html`
     <nav>
         <div class="navigation-everyone">
             <div class="all-books">
-                <a href="/">Books <i class="fas fa-book-open"></i></a>
+                <a href="/all-books">Books <i class="fas fa-book-open"></i></a>
             </div>
             <div class="dropdown">
                 <button class="dropdown-btn">Categories
@@ -42,7 +42,7 @@ export let navigationTemplate = (navInfo) => html`
 
             </div>
             <div class="pricing">
-                <a href="/">Pricing</a>
+                <a href="/pricing">Pricing</a>
             </div>
         </div>
 
@@ -51,18 +51,18 @@ export let navigationTemplate = (navInfo) => html`
         ? html`
             <a class="my-books" href="/">My Books</a>
             <div class="user-dropdown">
-                <a class="profile-link" href="/"><img class="profile-img"
+                <a class="profile-link" href="/my-books"><img class="profile-img"
                         src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                         alt="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
                         alt=""><i class="fa fa-caret-down"></i></a>
                 <div class="user-dropdown-content">
-                    <a class="item" href="/">Account Page</a>
-                    <a class="item" href="/">Sign Out</a>
+                    <a class="item" href="/account">Account Page</a>
+                    <a class="item" href="/logout">Sign Out</a>
                 </div>
             </div>`
         : html`
-            <a class="sign-up" href="/">Sign up</a>
-            <a class="sign-in" href="/">Sign in</a>`
+            <a class="sign-up" href="/register">Sign up</a>
+            <a class="sign-in" href="/login">Sign in</a>`
         }
         </div>
     </nav>
