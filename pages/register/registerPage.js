@@ -3,16 +3,20 @@ import { registerTemplate } from '../register/registerTemplate.js';
 
 let form = undefined;
 
-
-
 async function submitHandler(context, e) {
     e.preventDefault();
     let formData = new FormData(e.target);
 
-
     let username = formData.get('username');
     if (username.length < 5) {
         alert('Username must be at least 5 characters long.');
+        let templateResult = registerTemplate(form);
+        return context.renderView(templateResult);
+    }
+
+    let fullName = formData.get('fullname');
+    if (fullName.length < 5) {
+        alert('Full nane must be at least 5 characters long.');
         let templateResult = registerTemplate(form);
         return context.renderView(templateResult);
     }
@@ -39,14 +43,22 @@ async function submitHandler(context, e) {
     }
 
     let user = {
-        email: formData.get('email'),
         username: formData.get('username'),
+        email: formData.get('email'),
+        fullName: formData.get('fullname'),
         password: formData.get('password'),
-        image: formData.get('image'),
+        rePassword: formData.get('repeatPassword')
+    }
+    console.log(user);
+
+    let errorMessage = await authService.register(user);
+    if (errorMessage !== undefined) {
+        alert(`${errorMessage}`);
+        let templateResult = registerTemplate(form);
+        return context.renderView(templateResult);
     }
 
-    // await authService.register(user);
-    context.page.redirect('/');
+    context.page.redirect('/login');
 }
 
 async function getView(context) {

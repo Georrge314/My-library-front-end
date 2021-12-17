@@ -1,6 +1,6 @@
 import { jsonRequest } from "../helpers/jsonRequest.js";
 
-let baseUrl = 'http://localhost:3030/users';
+let baseUrl = 'http://localhost:8080/api';
 
 function getAuthToken() {
     return localStorage.getItem('authToken');
@@ -19,21 +19,24 @@ function isLoggedIn() {
 }
 
 async function login(user) {
-    let result = await jsonRequest(`${baseUrl}/login`, 'Post', user);
-    localStorage.setItem('authToken', result.accessToken);
-    localStorage.setItem('username', result.email);
-    localStorage.setItem('userId', result._id);
+    let result = await jsonRequest(`${baseUrl}/public/login`, 'Post', user);
+    if (result.errorMessage !== undefined) {
+        return result.errorMessage;
+    }
+    localStorage.setItem('authToken', result.authToken);
+    localStorage.setItem('username', result.response.username);
+    localStorage.setItem('userId', result.response.id);
 }
 
 async function register(user) {
-    let result = await jsonRequest(`${baseUrl}/register`, 'Post', user);
-    localStorage.setItem('authToken', result.accessToken);
-    localStorage.setItem('username', result.email);
-    localStorage.setItem('userId', result._id);
+    let result = await jsonRequest(`${baseUrl}/public/register`, 'Post', user);
+    if (result.errorMessage !== undefined) {
+        return result.errorMessage;
+    }
 }
 
 async function logout() {
-    await jsonRequest(`${baseUrl}/logout`, 'Get', undefined, true, true);
+    // await jsonRequest(`${baseUrl}/logout`, 'Get', undefined, true, true);
     localStorage.clear();
 }
 

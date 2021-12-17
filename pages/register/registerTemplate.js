@@ -4,16 +4,15 @@ export let registerTemplate = (form) => html`
 <section id="register-page">
     <form @submit=${form.submitHandler} class="register-login-form" action="post">
         <div class="register-login-container">
-            <label class="custom-file-upload" for="input-image">
-                <input name="image" type="file" id="input-image" name="image" accept="image/*" required>
-                Click to insert profile image <i class="far fa-file-image"></i>
-            </label>
-
+            
             <label for="username">Username</label>
             <input name="username" type="text" id="username" placeholder="Enter your username" required>
 
             <label for="email">Email address</label>
             <input name="email" type="email" id="email" placeholder="Enter your email address" required>
+
+            <label for="fullname">Full Name</label>
+            <input name="fullname" type="text" id="fullname" placeholder="Enter full name" required>
 
             <label for="password">Password</label>
             <input name="password" type="password" id="password" placeholder="Enter your password" required>

@@ -8,10 +8,13 @@ export async function jsonRequest(url, method, body, isAuthorized, skipResult) {
     let headers = {};
     if (['post', 'put', 'patch'].includes(method.toLowerCase())) {
         headers['Content-Type'] = 'application/json';
+        headers['Access-Control-Allow-Origin'] = '*';
+        headers['Access-Control-Allow-Headers'] = '*';
+        headers['Access-Control-Expose-Headers'] = '*';
     }
 
     if (isAuthorized) {
-        headers['X-Authorization'] = authService.getAuthToken();
+        headers['Authorization'] = 'Bearer ' + authService.getAuthToken();
     }
 
     let options = {
@@ -26,15 +29,19 @@ export async function jsonRequest(url, method, body, isAuthorized, skipResult) {
 
     let response = await fetch(url, options);
     
-    if(!response.ok) {
+    let result = {};
+
+    if (!response.ok) {
         let message = await response.text();
-        throw new Error(`${response.status}: ${response.statusText}\n${message}`);
+        console.log(message);
+        let errorMessage = JSON.parse(message);
+        result.errorMessage = errorMessage.details;
+        return result;
     }
-
-    let result = undefined
+    
     if (!skipResult) {
-        result = await response.json();
+        result.response = await response.json();
+        result.authToken = await response.headers.get('authorization')
     }
-
     return result;
 }

@@ -5,14 +5,11 @@ export let loginTemplate = (form) => html`
     <form @submit=${form.submitHandler} class="register-login-form" action="post">
         <div class="register-login-container">
 
-            <label for="email">Email address</label>
-            <input name="email" type="email" id="email" placeholder="Enter your email address" required>
+            <label for="username">Username</label>
+            <input name="username" type="text" id="username" placeholder="Enter your username" required>
 
             <label for="password">Password</label>
             <input name="password" type="password" id="password" placeholder="Enter your password" required>
-
-            <label for="repeatPassword">Repeat Password</label>
-            <input name="repeatPassword"type="password" id="repeatPassword" placeholder="Repeat your password" required>
 
             <div class="submit-container-user">
                 <button type="submit">Login</button>

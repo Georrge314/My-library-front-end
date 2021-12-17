@@ -7,10 +7,10 @@ async function submitHandler(context, e) {
     e.preventDefault();
     let formData = new FormData(e.target);
 
-    let emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    if (!emailRegex.test(formData.get('email'))) {
-        alert('Please enter valid email address.');
-        let templateResult = loginTemplate(form);
+    let username = formData.get('username');
+    if (username.length < 5) {
+        alert('Username must be at least 5 characters long.');
+        let templateResult = registerTemplate(form);
         return context.renderView(templateResult);
     }
 
@@ -21,19 +21,17 @@ async function submitHandler(context, e) {
         return context.renderView(templateResult);
     }
 
-    let repeatPassword = formData.get('repeatPassword');
-    if (repeatPassword !== password) {
-        alert('Repeat password must be same as password.');
-        let templateResult = loginTemplate(form);
-        return context.renderView(templateResult);
-    }
-
     let user = {
-        email: formData.get('email'),
+        username: formData.get('username'),
         password: formData.get('password'),
     }
 
-    // await authService.login(user);
+    let errorMessage = await authService.login(user);
+    if (errorMessage !== undefined) {
+        alert(`${errorMessage}`);
+        let templateResult = loginTemplate(form);
+        return context.renderView(templateResult);
+    }
     context.page.redirect('/');
 }
 
